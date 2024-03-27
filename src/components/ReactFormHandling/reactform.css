@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+font-family: Poppins;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: beige;
+
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: fit-content;
+    width: 400px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: #fff;
+
+
+}
+
+.form-container h2 {
+    color: rgb(77, 1, 77);
+    text-align: center;
+}
+
+.form-content,
+.form-element {
+    display: flex;
+    flex-direction: column;
+
+}
+.form-element{
+    margin-top:15px;
+}
+.form-element label{
+    color: #212121;
+    
+}
+
+.form-element input {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-element input:focus {
+    border: none;
+    outline: 1px solid rgb(77, 11, 243);
+}
+.form-element span{
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+
+.form-element input:invalid[focused="true"] ~ span {
+    display: block;
+}
+.form-element input:invalid[focused="true"]{
+    border: 1px solid red;
+    outline:none;
+}
+.form-element button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    background-color: rgb(77, 1, 77);
+    color: #fff;
+    border: none;
+    border-radius:8px;
+    cursor: pointer;
+}
