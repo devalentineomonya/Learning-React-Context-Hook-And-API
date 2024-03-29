@@ -6,7 +6,7 @@ const AsideMenu = ({ children }) => {
   const [expanded, setExpanded] = useState(true);
 
   return (
-    <aside className={`${expanded ? "w-[300px]" : "w-[80px]"}`}>
+    <aside className={`h-screen ${expanded ? "w-[300px]" : "w-[80px]"}`}>
       <nav className="h-full flex flex-col bg-white border-r shadow-sm">
         <div className="p-4 pb-2 flex justify-between items-center">
           <img
